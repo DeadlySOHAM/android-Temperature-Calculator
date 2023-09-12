@@ -275,10 +275,10 @@
             android:layout_marginStart="8dp"
             android:gravity="end"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/button_backspace"
+            app:layout_constraintBottom_toBottomOf="@+id/button_backspace"
             app:layout_constraintEnd_toStartOf="@+id/button_backspace"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+            app:layout_constraintTop_toTopOf="@+id/button_backspace">
 
             <TextView
                 android:id="@+id/input_value_1"
@@ -295,7 +295,7 @@
                 android:textColor="@android:color/black"
                 app:layout_constraintBottom_toTopOf="@+id/button_backspace"
                 app:layout_constraintEnd_toStartOf="@+id/input_operation"
-                tools:text="1234567890" />
+                tools:text="input : 1234567890" />
 
             <TextView
                 android:id="@+id/input_operation"
@@ -359,7 +359,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="output : 123456789"/>
         </LinearLayout>
 
         <LinearLayout
@@ -385,7 +386,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView_result"
-                tools:text="1234567890" />
+                tools:text="input : executed : 1234567890" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
